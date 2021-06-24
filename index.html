@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Burger House</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top ">
+        <div class="container-fluid">
+
+            <a href="#" class="navbar-brand"><span class="text-warning">Burger House</span> <i
+                    class="bi bi-egg-fried"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="#navmenu">
+                <ul class="navbar-nav ms-auto red-color">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/menu.html" class="nav-link">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/about.html" class="nav-link">About</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Screen -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container text-center ">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Welcome to <span class="text-warning">Burger House!</span> </h1>
+                    <p class="text-secondary">Your Favorite Burger Restaurant</p>
+                    <p class="lead my-4">
+                        We put our heart into our burgers
+                    </p>
+                    <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Book A
+                        Table</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="/img/main-burger.jpeg" alt="burger_with_a_knife">
+            </div>
+        </div>
+    </section>
+
+    <!-- Slides -->
+    <section class="bg-warning text-dark p-5  ">
+        <div class="container text-center">
+            <!-- <h1 class="text-warning">Welcome to Burger House!</h1> -->
+            <h2>Feeling <span class="text-danger">Hungry?</span> </h1>
+                <p class="lead">Look at Our yummy😋 burgers!</p>
+        </div>
+        <div class="container w-75" style="background-color: rgb(0, 0, 0);">
+            <div id="carouselExampleCaptions" class="carousel slide p-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/burger.jpeg" class="d-block w-100" alt="burger_photo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Double Burger</h5>
+                            <p class="lead">Great for those who want a big one.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/burger.jpeg" class="d-block w-100" alt="burger">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Mixed Burger</h5>
+                            <p class="lead">It is Mixed, you never know what you'll get ;)</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/burger.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cheeseburger</h5>
+                            <p class="lead">Cheese, a lot of Cheeeese</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs -->
+    <section class="p-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="text-center text-light">Our <span class="text-danger">Chefs</span> </h2>
+            <p class="lead mb-5 text-center text-light">Meet our industry famous Chefs!</p>
+            <div class="row text-center g-4">
+                <div class="col">
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3"
+                                alt="">
+                            <h5 class="card-title">Adrian Evans</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+                                consequatur reiciendis maxime suscipit velit facere.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <div class="card-body ">
+                            <img src="https://randomuser.me/api/portraits/men/51.jpg" class="rounded-circle mb-3"
+                                alt="">
+                            <h5 class="card-title">Manuel Rodrigo</h5>
+                            <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illum
+                                quo
+                                reprehenderit soluta suscipit esse.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <div class="card-body ">
+                            <img src="https://randomuser.me/api/portraits/women/58.jpg" class="rounded-circle mb-3"
+                                alt="">
+                            <h5 class="card-title">Gloria Jenkins</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad ullam
+                                eveniet quos, esse quibusdam magni.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+
+    <section class="p-5 text-center bg-warning">
+        <div class="container">
+            <h2>Have a <span class="text-danger">Question?</span></h2>
+            <p class="lead">Don't Hesitate to Ask!</p>
+            <div class="mb-3 bgf-dark">
+                <label for="exampleFormControlInput1" class="form-label">Your Email address:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Your Question:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="My Question is"></textarea>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 <span class="text-warning">Burger House</span> </p>
+            <a href="" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1 text-danger"></i>
+            </a>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
